@@ -1,3 +1,5 @@
+import ListaProdutos from '../../components/produtos/listaprodutos/ListaProdutos';
+import ModalProduto from '../../components/produtos/modalprodutos/ModalProduto';
 import './Home.css'
 
 function Home() {
@@ -12,10 +14,8 @@ function Home() {
                     <p className="text-center px-10">Prepare-se para uma aventura épica e descubra os melhores títulos que vão desafiar sua mente e aquecer seu coração</p>
 
                     <div className="flex justify-around gap-4">
-                            <div className='rounded text-white 
-                                            border-white border-solid border-2 py-2 px-4'
-                                >
-                                Nova Categoria
+                            <div>
+                                <ModalProduto />
                             </div>
                         </div>
                 </div>
@@ -25,6 +25,7 @@ function Home() {
                 </div>
             </div>
         </div>
+        <ListaProdutos />
         </>
     );
 }

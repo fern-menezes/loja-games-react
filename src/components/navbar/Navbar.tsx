@@ -8,8 +8,8 @@ function Navbar() {
             			   bg-zinc-900 text-white border-b border-zinc-500'>
             
                 <div className="container flex justify-between text-lg px-5">
-                    <div className='flex items-center gap-2'>
-                        <Gamepad /> 
+                    <div className='flex items-center gap-2 hover:text-sky-800'>
+                        <Gamepad className='animate-wiggle'/> 
                         <Link to='/' className="text-xl font-bold">
                         GAMELAND
                         </Link>
@@ -23,14 +23,14 @@ function Navbar() {
 
 
                     <div className='flex items-center gap-4 text-md'>
-                        <p>Produtos</p>
+                        <Link to='/produtos' className='hover:underline'>Produtos</Link>
                         <Link to='/categorias' className='hover:underline'>Categorias</Link>
                         <Link to='/cadastrarcategoria' className='hover:underline'>Nova Categoria</Link>
                         <p>
-                            <User className='size-5 cursor-pointer hover:scale-110 hover:text-sky-600'/>
+                            <User className='size-5 cursor-pointer hover:scale-110 hover:text-sky-600 hover:animate-wiggle'/>
                         </p>
                         <p>
-                            <ShoppingCart className='size-5 cursor-pointer hover:scale-110 hover:text-sky-600'/>
+                            <ShoppingCart className='size-5 cursor-pointer hover:scale-110 hover:text-sky-600 hover:animate-wiggle'/>
                         </p>
                     </div>
                 </div>
